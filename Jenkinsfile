@@ -12,7 +12,6 @@ pipeline {
 }
 
             stage('DeployToStaging') {
-             agent any 
             when {
                 branch 'master'
             }
