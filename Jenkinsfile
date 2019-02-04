@@ -9,9 +9,8 @@ pipeline {
             }
         }
     }
-}
 
-            stage('DeployToStaging') {
+    stage('DeployToStaging') {
             when {
                 branch 'master'
             }
@@ -19,4 +18,6 @@ pipeline {
                 echo " I am in master branch"
             }
         }
+    
+}
         
