@@ -22,10 +22,6 @@ pipeline {
                         publishers: [
                             sshPublisherDesc(
                                 configName: 'Staging',
-                                sshCredentials: [
-                                    username: "deploy",
-                                    encryptedPassphrase: "jenkins"
-                                ], 
                                 transfers: [
                                     sshTransfer(
                                         sourceFiles: 'dist/trainSchedule.zip',
